@@ -22,7 +22,8 @@ function LogoItem({ logo }: { logo: { name: string; src: string } }) {
         alt={logo.name}
         width={220}
         height={100}
-        className="max-h-24 w-auto object-contain opacity-50 transition-opacity hover:opacity-80"
+        className="object-contain opacity-50 transition-opacity hover:opacity-80"
+        style={{ width: "auto", height: "auto", maxHeight: "6rem" }}
       />
     </div>
   )

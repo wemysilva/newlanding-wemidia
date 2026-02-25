@@ -36,7 +36,8 @@ export function Navbar() {
             alt="WeMídia"
             width={200}
             height={56}
-            className="h-12 w-auto"
+            className="h-12"
+            style={{ width: "auto", height: "auto", maxHeight: "3rem" }}
             priority
           />
         </Link>

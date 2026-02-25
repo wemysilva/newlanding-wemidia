@@ -12,7 +12,8 @@ export function Footer() {
             alt="WeMídia"
             width={280}
             height={80}
-            className="h-20 w-auto"
+            className="h-20"
+            style={{ width: "auto", height: "auto", maxHeight: "5rem" }}
           />
 
           {/* Tagline */}

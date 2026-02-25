@@ -1,4 +1,3 @@
-import Image from "next/image"
 import { Mail } from "lucide-react"
 
 export function Footer() {
@@ -7,13 +6,10 @@ export function Footer() {
       <div className="mx-auto max-w-6xl px-6 py-16">
         <div className="flex flex-col items-center gap-4 text-center">
           {/* Logo */}
-          <Image
+          <img
             src="/images/logo-wemidia.png"
             alt="WeMídia"
-            width={280}
-            height={80}
-            className="h-20"
-            style={{ width: "auto", height: "auto", maxHeight: "5rem" }}
+            className="h-20 w-auto"
           />
 
           {/* Tagline */}

@@ -2,7 +2,6 @@
 
 import { useState } from "react"
 import { usePathname } from "next/navigation"
-import Image from "next/image"
 import Link from "next/link"
 import { Menu, X, ArrowRight } from "lucide-react"
 
@@ -31,14 +30,10 @@ export function Navbar() {
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         {/* Logo */}
         <Link href="/" className="shrink-0">
-          <Image
+          <img
             src="/images/logo-wemidia.png"
             alt="WeMídia"
-            width={200}
-            height={56}
-            className="h-12"
-            style={{ width: "auto", height: "auto", maxHeight: "3rem" }}
-            priority
+            className="h-12 w-auto"
           />
         </Link>
 

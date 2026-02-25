@@ -1,6 +1,6 @@
 "use client"
 
-import Image from "next/image"
+
 
 const logos = [
   { name: "Ubisoft", src: "/images/logos/ubisoft.png" },
@@ -17,13 +17,10 @@ const logos = [
 function LogoItem({ logo }: { logo: { name: string; src: string } }) {
   return (
     <div className="flex h-32 w-48 shrink-0 items-center justify-center px-2">
-      <Image
+      <img
         src={logo.src}
         alt={logo.name}
-        width={220}
-        height={100}
-        className="object-contain opacity-50 transition-opacity hover:opacity-80"
-        style={{ width: "auto", height: "auto", maxHeight: "6rem" }}
+        className="max-h-24 w-auto object-contain opacity-50 transition-opacity hover:opacity-80"
       />
     </div>
   )

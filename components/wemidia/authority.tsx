@@ -20,6 +20,8 @@ function LogoItem({ logo }: { logo: { name: string; src: string } }) {
       <img
         src={logo.src}
         alt={logo.name}
+        loading="lazy"
+        decoding="async"
         className="max-h-24 w-auto object-contain opacity-50 transition-opacity hover:opacity-80"
       />
     </div>

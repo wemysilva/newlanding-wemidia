@@ -44,6 +44,8 @@ export function ProjectCard({ title, description, videoUrl }: ProjectCardProps) 
               <img
                 src={thumbnailUrl}
                 alt={`Thumbnail de ${title}`}
+                loading="lazy"
+                decoding="async"
                 className="absolute inset-0 h-full w-full object-cover"
                 crossOrigin="anonymous"
               />

@@ -48,43 +48,48 @@ export function Process() {
           <div className="absolute left-6 top-0 bottom-0 w-px bg-gradient-to-b from-primary/40 via-primary/20 to-transparent lg:left-1/2 lg:-translate-x-px" />
 
           <div className="flex flex-col gap-12">
-            {steps.map((step, index) => (
-              <div
-                key={step.number}
-                className={`relative flex items-start gap-8 lg:gap-16 ${
-                  index % 2 === 0
-                    ? "lg:flex-row"
-                    : "lg:flex-row-reverse lg:text-right"
-                }`}
-              >
-                {/* Dot on timeline */}
-                <div className="absolute left-6 top-6 -translate-x-1/2 lg:left-1/2">
-                  <div className="timeline-glow h-3 w-3 rounded-full bg-primary" />
-                </div>
-
-                {/* Content card */}
+            {steps.map((step, index) => {
+              const isOdd = index % 2 !== 0
+              return (
                 <div
-                  className={`ml-14 lg:ml-0 lg:w-1/2 ${
-                    index % 2 === 0 ? "lg:pr-16" : "lg:pl-16"
+                  key={step.number}
+                  className={`relative flex items-start gap-8 lg:gap-16 ${
+                    isOdd
+                      ? "lg:flex-row"
+                      : "lg:flex-row-reverse"
                   }`}
                 >
-                  <div className="glow-teal rounded-xl border border-[#2DD4BF]/15 bg-card/50 p-6 transition-all">
-                    <span className="font-serif text-sm font-bold tracking-widest text-[#2DD4BF]">
-                      {step.number}
-                    </span>
-                    <h3 className="mt-1 font-serif text-xl font-bold text-foreground">
-                      {step.title}
-                    </h3>
-                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                      {step.description}
-                    </p>
+                  {/* Dot on timeline */}
+                  <div className="absolute left-6 top-6 -translate-x-1/2 lg:left-1/2">
+                    <div className="timeline-glow h-3 w-3 rounded-full bg-primary" />
                   </div>
-                </div>
 
-                {/* Spacer for alternate sides */}
-                <div className="hidden lg:block lg:w-1/2" />
-              </div>
-            ))}
+                  {/* Content card */}
+                  <div
+                    className={`ml-14 lg:ml-0 lg:w-1/2 ${
+                      isOdd ? "lg:pr-16" : "lg:pl-16"
+                    }`}
+                  >
+                    <div className={`glow-teal rounded-xl border border-[#2DD4BF]/15 bg-card/50 p-6 transition-all ${
+                      isOdd ? "text-left" : "text-right"
+                    }`}>
+                      <span className="font-serif text-sm font-bold tracking-widest text-[#2DD4BF]">
+                        {step.number}
+                      </span>
+                      <h3 className="mt-1 font-serif text-xl font-bold text-foreground">
+                        {step.title}
+                      </h3>
+                      <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                        {step.description}
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Spacer for alternate sides */}
+                  <div className="hidden lg:block lg:w-1/2" />
+                </div>
+              )
+            })}
           </div>
         </div>
       </div>

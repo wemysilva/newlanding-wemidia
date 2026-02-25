@@ -9,6 +9,8 @@ export function Footer() {
           <img
             src="/images/logo-wemidia.png"
             alt="WeMídia"
+            loading="lazy"
+            decoding="async"
             className="h-20 w-auto"
           />
 

@@ -6,9 +6,19 @@ import { PortfolioCta } from "@/components/wemidia/portfolio-cta"
 import { Footer } from "@/components/wemidia/footer"
 
 export const metadata: Metadata = {
-  title: "Portfolio | WeMidia - Projetos com Direção Estratégica",
+  title: "Portfolio | WeMídia - Projetos com Direção Estratégica",
   description:
     "Casos reais onde estruturamos narrativa, posicionamento e execução audiovisual para empresas em crescimento.",
+  alternates: {
+    canonical: '/portfolio',
+  },
+  openGraph: {
+    title: "Portfolio | WeMídia - Projetos com Direção Estratégica",
+    description:
+      "Casos reais onde estruturamos narrativa, posicionamento e execução audiovisual para empresas em crescimento.",
+    url: 'https://wemidia.com.br/portfolio',
+    type: 'website',
+  },
 }
 
 const institucionalProjects = [

@@ -2,7 +2,7 @@ import { ArrowRight } from "lucide-react"
 
 export function CtaFinal() {
   return (
-    <section className="relative py-24 lg:py-32">
+    <section className="relative py-24 lg:py-32 bg-background">
       <div className="relative mx-auto max-w-3xl px-6 text-center">
         <h2 className="font-serif text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl text-balance">
           Vamos estruturar a comunicação da sua empresa?

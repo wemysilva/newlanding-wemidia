@@ -28,7 +28,7 @@ export function PortfolioSection({
           <span className="text-sm font-light tracking-widest uppercase text-[#2DD4BF]">
             {label}
           </span>
-          <h2 className="mt-4 font-serif text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl text-balance">
+          <h2 className="mt-4 font-serif text-2xl font-normal tracking-tight text-foreground sm:text-3xl lg:text-4xl text-balance">
             {title}
           </h2>
           {description && (

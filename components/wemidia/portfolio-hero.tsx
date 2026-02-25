@@ -23,10 +23,6 @@ export function PortfolioHero() {
           audiovisual para empresas em crescimento.
         </p>
 
-        <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-muted-foreground/80">
-          Cada projeto começa com diagnóstico e termina com aplicação estratégica.
-        </p>
-
         <div className="mt-8 flex items-center justify-center gap-8 text-sm text-muted-foreground">
           <span>Institucional Estratégico</span>
           <span className="text-border">&#x2022;</span>

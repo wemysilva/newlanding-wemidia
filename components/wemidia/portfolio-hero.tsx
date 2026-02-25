@@ -18,7 +18,7 @@ export function PortfolioHero() {
           <span className="highlight-gradient">Direção Estratégica</span>
         </h1>
 
-        <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground lg:text-xl">
+        <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-foreground/70 lg:text-xl">
           Casos reais onde estruturamos narrativa, posicionamento e execução
           audiovisual para empresas em crescimento.
         </p>
@@ -27,16 +27,12 @@ export function PortfolioHero() {
           Cada projeto começa com diagnóstico e termina com aplicação estratégica.
         </p>
 
-        <div className="mt-8 flex items-center justify-center gap-3 text-sm text-muted-foreground">
-          <span className="rounded-full border border-border bg-card/50 px-4 py-1.5">
-            Institucional Estratégico
-          </span>
-          <span className="rounded-full border border-border bg-card/50 px-4 py-1.5">
-            Treinamento Corporativo
-          </span>
-          <span className="rounded-full border border-border bg-card/50 px-4 py-1.5">
-            Motion Branding
-          </span>
+        <div className="mt-8 flex items-center justify-center gap-8 text-sm text-muted-foreground">
+          <span>Institucional Estratégico</span>
+          <span className="text-border">&#x2022;</span>
+          <span>Treinamento Corporativo</span>
+          <span className="text-border">&#x2022;</span>
+          <span>Motion Branding</span>
         </div>
       </div>
 

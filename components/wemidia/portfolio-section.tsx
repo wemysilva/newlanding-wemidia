@@ -22,7 +22,7 @@ export function PortfolioSection({
   projects,
 }: PortfolioSectionProps) {
   return (
-    <section id={id} className="relative py-24 lg:py-32">
+    <section id={id} className="relative py-12 lg:py-16">
       <div className="mx-auto max-w-6xl px-6">
         <div className="text-center">
           <span className="text-sm font-light tracking-widest uppercase text-[#2DD4BF]">

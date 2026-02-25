@@ -1,6 +1,6 @@
 "use client"
 
-import { ArrowRight, Play } from "lucide-react"
+import { ArrowRight } from "lucide-react"
 import Link from "next/link"
 
 export function Hero() {
@@ -30,15 +30,19 @@ export function Hero() {
         </p>
 
         <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-          <button className="glow-button group inline-flex items-center gap-2 rounded-lg px-8 py-3.5 text-sm font-semibold text-primary-foreground transition-all hover:scale-105">
+          <a
+            href="http://wa.me/61981297057"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="glow-button group inline-flex items-center gap-2 rounded-lg px-8 py-3.5 text-sm font-semibold text-primary-foreground transition-all hover:scale-105"
+          >
             Entrar em contato
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
-          </button>
+          </a>
           <Link
             href="/portfolio"
             className="inline-flex items-center gap-2 rounded-lg border border-border bg-card/50 px-8 py-3.5 text-sm font-semibold text-foreground transition-all hover:bg-card hover:scale-105"
           >
-            <Play className="h-4 w-4" />
             Ver projetos
           </Link>
         </div>

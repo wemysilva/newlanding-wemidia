@@ -16,13 +16,13 @@ const logos = [
 
 function LogoItem({ logo }: { logo: { name: string; src: string } }) {
   return (
-    <div className="flex h-28 w-44 shrink-0 items-center justify-center px-3">
+    <div className="flex h-32 w-48 shrink-0 items-center justify-center px-2">
       <Image
         src={logo.src}
         alt={logo.name}
-        width={180}
-        height={80}
-        className="max-h-20 w-auto object-contain opacity-50 transition-opacity hover:opacity-80"
+        width={220}
+        height={100}
+        className="max-h-24 w-auto object-contain opacity-50 transition-opacity hover:opacity-80"
       />
     </div>
   )
@@ -50,7 +50,7 @@ export function Authority() {
           <div className="pointer-events-none absolute right-0 top-0 bottom-0 z-10 w-24 bg-gradient-to-l from-background to-transparent" />
 
           <div className="overflow-hidden">
-            <div className="animate-scroll-left flex items-center gap-6" style={{ width: "max-content" }}>
+            <div className="animate-scroll-left flex items-center gap-3" style={{ width: "max-content" }}>
               {[...logos, ...logos].map((logo, index) => (
                 <LogoItem key={`${logo.name}-${index}`} logo={logo} />
               ))}

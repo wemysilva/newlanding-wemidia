@@ -1,7 +1,6 @@
 "use client"
 
 import { useState } from "react"
-import { Play, ExternalLink } from "lucide-react"
 
 interface ProjectCardProps {
   title: string
@@ -20,11 +19,11 @@ export function ProjectCard({ title, description, videoUrl }: ProjectCardProps) 
   const [isPlaying, setIsPlaying] = useState(false)
   const videoId = getYouTubeId(videoUrl)
   const thumbnailUrl = videoId
-    ? `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`
+    ? `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`
     : null
 
   return (
-    <div className="glow-blue group rounded-xl border border-border bg-card/50 overflow-hidden transition-all glow-blue-hover">
+    <div className="glow-blue group rounded-xl border border-border bg-card/50 overflow-hidden transition-all hover:shadow-[0_0_30px_rgba(45,212,191,0.2),0_0_60px_rgba(45,212,191,0.1)]">
       {/* Video thumbnail / embed area */}
       <div className="relative aspect-video w-full bg-secondary">
         {isPlaying && videoId ? (
@@ -49,10 +48,7 @@ export function ProjectCard({ title, description, videoUrl }: ProjectCardProps) 
                 crossOrigin="anonymous"
               />
             )}
-            <div className="absolute inset-0 bg-background/40 transition-colors group-hover:bg-background/20" />
-            <div className="relative z-10 flex h-14 w-14 items-center justify-center rounded-full bg-primary/90 text-primary-foreground shadow-lg transition-transform group-hover:scale-110">
-              <Play className="h-6 w-6 ml-0.5" />
-            </div>
+            <div className="absolute inset-0 bg-background/20 transition-colors group-hover:bg-background/10" />
           </button>
         )}
       </div>
@@ -65,17 +61,6 @@ export function ProjectCard({ title, description, videoUrl }: ProjectCardProps) 
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           {description}
         </p>
-        <div className="mt-5">
-          <a
-            href={videoUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-lg border border-border bg-card/50 px-5 py-2 text-sm font-semibold text-foreground transition-all hover:bg-card hover:scale-105"
-          >
-            Ver projeto completo
-            <ExternalLink className="h-3.5 w-3.5" />
-          </a>
-        </div>
       </div>
     </div>
   )

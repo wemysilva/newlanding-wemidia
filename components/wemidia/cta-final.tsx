@@ -12,10 +12,15 @@ export function CtaFinal() {
           WeMídia e descubra como transformar sua comunicação corporativa.
         </p>
         <div className="mt-10">
-          <button className="glow-button group inline-flex items-center gap-2 rounded-lg px-10 py-4 text-sm font-semibold text-primary-foreground transition-all hover:scale-105">
+          <a
+            href="http://wa.me/61981297057"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="glow-button group inline-flex items-center gap-2 rounded-lg px-10 py-4 text-sm font-semibold text-primary-foreground transition-all hover:scale-105"
+          >
             Agendar conversa
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
-          </button>
+          </a>
           <p className="mt-4 text-sm text-muted-foreground">
             Resposta em até 24h úteis.
           </p>

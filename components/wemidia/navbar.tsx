@@ -52,13 +52,15 @@ export function Navbar() {
               {link.label}
             </Link>
           ))}
-          <Link
-            href="/#contato"
+          <a
+            href="http://wa.me/61981297057"
+            target="_blank"
+            rel="noopener noreferrer"
             className="glow-button inline-flex items-center gap-2 rounded-lg px-5 py-2 text-sm font-semibold text-primary-foreground transition-all hover:scale-105"
           >
             Fale conosco
             <ArrowRight className="h-3.5 w-3.5" />
-          </Link>
+          </a>
         </div>
 
         {/* Mobile toggle */}
@@ -85,14 +87,16 @@ export function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <Link
-              href="/#contato"
+            <a
+              href="http://wa.me/61981297057"
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setIsOpen(false)}
               className="glow-button mt-2 inline-flex items-center justify-center gap-2 rounded-lg px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-all"
             >
               Fale conosco
               <ArrowRight className="h-3.5 w-3.5" />
-            </Link>
+            </a>
           </div>
         </div>
       )}
